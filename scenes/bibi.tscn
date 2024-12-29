@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfhb6d452iior"]
+
+[ext_resource type="Script" path="res://scenes/bibi.gd" id="1_bxfc3"]
+[ext_resource type="Texture2D" uid="uid://dbgf4dt51s408" path="res://assets/bibi.png" id="1_k18cx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uh388"]
+radius = 31.0
+height = 70.0
+
+[node name="BIBI" type="Area2D"]
+script = ExtResource("1_bxfc3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0947265, 0.0947265)
+texture = ExtResource("1_k18cx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2)
+shape = SubResource("CapsuleShape2D_uh388")

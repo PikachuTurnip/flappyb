@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfmgqswnerk33"]
+
+[ext_resource type="Texture2D" uid="uid://c53koklepif6b" path="res://assets/darkandgritty.png" id="1_f1kn4"]
+
+[node name="MAIN" type="Node"]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(577, 284)
+scale = Vector2(0.908594, 0.894444)
+texture = ExtResource("1_f1kn4")
